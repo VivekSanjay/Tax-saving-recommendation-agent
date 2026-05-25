@@ -7,7 +7,7 @@ Endpoints:
   POST /api/explore      — iterative recommendation exploration + live recalculation
 """
 
-from flask import Flask, request, jsonify
+from flask import Flask, jsonify, request, send_from_directory
 from api.tax_agent import TaxSavingAgent, TAX_KNOWLEDGE_BASE, InferenceEngine
 
 app = Flask(__name__)
