@@ -8,7 +8,7 @@ Endpoints:
 """
 
 from flask import Flask, request, jsonify
-from tax_agent import TaxSavingAgent, TAX_KNOWLEDGE_BASE, InferenceEngine
+from api.tax_agent import TaxSavingAgent, TAX_KNOWLEDGE_BASE, InferenceEngine
 
 app = Flask(__name__)
 
