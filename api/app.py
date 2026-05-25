@@ -6,7 +6,7 @@ Endpoints:
   POST /api/calculate    — full tax analysis from plain-language form data
   POST /api/explore      — iterative recommendation exploration + live recalculation
 """
-
+import os 
 from flask import Flask, jsonify, request, send_from_directory
 from api.tax_agent import TaxSavingAgent, TAX_KNOWLEDGE_BASE, InferenceEngine
 
