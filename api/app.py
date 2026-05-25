@@ -337,7 +337,9 @@ def explore():
     except Exception as e:
         return jsonify({"success": False, "error": str(e)}), 500
 
-
+@app.route("/")
+def home():
+    return send_from_directory("../frontend", "index.html")
 # ── RUN ───────────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
     print("This module is import-only for serverless deployment.")
